@@ -116,14 +116,19 @@ Extra-bold 800
   font-size: 32px;
   color: rgba(255,255,255, 0.9);
   text-shadow: 2px 2px 8px black;
+  padding-bottom: 15px;
 }
 /********* MODAL************/
 /* button style */
 .button {
-    background: coral;
+    background: yellowgreen;
     padding: 1em 2em;
     color: white;
     border: 0;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
 
 }
 
@@ -157,22 +162,29 @@ Extra-bold 800
 }
 
 .modal-header {
- background-color: coral;
+ background-color: yellowgreen;
  padding: 15px;
  color: white;
  text-align: center;
+ font-family: 'Montserrat', sans-serif;
 }
 
 .modal-header h2, .modal-footer h3 {
+  font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
 .modal-body {
+  font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
 }
 
+.modal-body span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
 .modal-footer {
-    background-color: coral;
+    background-color: yellowgreen;
     padding: 10px;
     color: white;
     text-align: center;
