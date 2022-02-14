@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Staatliches', cursive;
+
+Thin 100
+Extra-light 200
+Extra-light 200 italic
+Light 300
+Extra-bold 800
+*/
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: yellowgreen;
+}
+
+.inner-header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /* background-color: tomato; */
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.logo-container h1 span{
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li{
+   display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+/********* MODAL************/
+/* button style */
+.button {
+    background: coral;
+    padding: 1em 2em;
+    color: white;
+    border: 0;
+
+}
+
+.button:hover {
+    background: #333;
+}
+
+/* modal style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    /* 20% is how far down the modal will appear in the window/ auto is left and right*/
+    margin: 20% auto;
+    width: 20%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0, 0.2),0 7px 20px 0 rgba(0,0,0, 0.17);
+    /* for key frame // fade in*/
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.modal-header {
+ background-color: coral;
+ padding: 15px;
+ color: white;
+ text-align: center;
+}
+
+.modal-header h2, .modal-footer h3 {
+    margin: 0;
+}
+
+.modal-body {
+    padding: 10px 20px;
+}
+
+.modal-footer {
+    background-color: coral;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.closeBtn {
+    color: #ccc;
+    float:right;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* key frame */
+@keyframes modalopen {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+/********* MODAL************/
+
+/*MEDIA QUERY BREAKPOINTS*/
+
+.example {
+    padding: 20px;
+    color: white;
+  }
+
+  	
+/* @media <media_type> connector ( <query> ) */
+
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+     .inner-header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .example {background: red;} */
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    /* .inner-header {}
+    .example {background: green;} */
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    /* .inner-header {}
+    .example {background: blue;} */
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    /* .inner-header {}
+    .example {background: orange;} */
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+    /* .example {background: pink;} */
+  }
+
+  @media print {}
+
+  /* hamburger */
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}

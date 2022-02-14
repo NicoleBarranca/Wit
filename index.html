@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,800;1,200&family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Wit</title>
 </head>
-<body>
-    <script src="./assets/script.js">
 
-    </script>
+<body>
+    <!--NAV-->
+    <div class="header example">
+        <div class="inner-header">
+            <div class="logo-container">
+                <h1>W<span>i</span>t</h1>
+            </div>
+            <ul class="navigation">
+                <a href="">
+                    <li>what is wit?</li>
+                </a>
+                <a href="">
+                    <li>jokes</li>
+                </a>
+                <a href="">
+                    <li>random and useless facts</li>
+                </a>
+                <a href="">
+                    <li>excuses for all ocasions</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+<!--HAMBURGER MENU-->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <section class="top-nav">
+    <div>
+      Logo Here
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ul>
+  </section>
+
+      <!--MODAL-->
+      <button id="modalBtn" class="button">Click This</button>
+
+      <div id="simpleModal" class="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <span class="closeBtn">&times;</span>
+                  <h2>Modal Header</h2>
+              </div>
+              <div class="modal-body">
+                  <p>
+                      Hey!
+                      Welcome to my shop.....Let me chop your mop!
+                  </p>
+                  <p>daintelyyyyyy</p>
+              </div>
+              <div class="modal-footer">
+                  <h3>Modal Footer</h3>
+              </div>
+          </div>
+      </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
