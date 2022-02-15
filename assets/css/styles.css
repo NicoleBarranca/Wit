@@ -100,7 +100,7 @@ Extra-bold 800
   text-align: center;
   position: absolute;
   margin: 15% auto;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
  color: white;
@@ -118,6 +118,7 @@ Extra-bold 800
   text-shadow: 2px 2px 8px black;
   padding-bottom: 15px;
 }
+
 /********* MODAL************/
 /* button style */
 .button {
@@ -210,6 +211,50 @@ Extra-bold 800
     to {opacity: 1;}
 }
 
+
+/*what is wit section*/
+
+.what-is-wit {
+  font-family:  'Montserrat', sans-serif;
+  background-color: yellowgreen;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ color: white;
+ text-align: center;
+}
+
+.what-is-wit h2 {
+  font-size: 36px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.733);
+}
+
+.what-is-wit h4 {
+  font-size: 24px;
+  /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.733); */
+  font-style: italic;
+  max-width: 100%;
+  min-width: auto;
+  
+}
+
+.wit-content
+{
+  max-width: 100%;
+  min-width: auto;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  font-weight: normal;
+  font-size: 16px;
+  color: gray;
+}
+.wit-content span {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.733);
+text-transform: uppercase;
+}
 /********* MODAL************/
 
 /*MEDIA QUERY BREAKPOINTS*/
@@ -258,7 +303,23 @@ Extra-bold 800
 
   @media print {}
 
-  /* hamburger */
+
+
+
+
+
+
+
+
+
+
+
+
+  /* HAMBURGER NAV*/
+    /* HAMBURGER NAV*/
+      /* HAMBURGER NAV*/
+        /* HAMBURGER NAV*/
+  /*
   @import url(https://fonts.googleapis.com/css?family=Raleway);
 h2 {
   vertical-align: center;
@@ -283,7 +344,7 @@ html, body {
   background-color: #00BAF0;
   background: linear-gradient(to left, #f46b45, #eea849);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+ /* color: #FFF;
   height: 50px;
   padding: 1em;
 }
@@ -389,4 +450,4 @@ html, body {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-}
+} */
