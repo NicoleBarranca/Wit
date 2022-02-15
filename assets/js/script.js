@@ -34,3 +34,22 @@ function clickOutside(event){
     modal.style.display = 'none';
  }
 }
+
+var jokeOfDay = document.querySelector("#jokes") ;
+var jokeResults = jokeOfDay.value;
+
+function get_joke_of_the_day() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+	 if (this.readyState == 4 && this.status == 200) {
+	     // Access the result here
+	     alert(this.responseText);
+	 }
+    };
+    xhttp.open("GET", "https://api.jokes.one/jod/categories", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.setRequestHeader("X-JokesOne-Api-Secret", "https://api.jokes.one/jod/categories");
+    xhttp.send();
+}
+
+get_joke_of_the_day()
